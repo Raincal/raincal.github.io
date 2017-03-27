@@ -1,440 +1,21 @@
-<!doctype html>
-
-
-
-  
-
-
-<html class="theme-next pisces use-motion" lang="zh-Hans">
-<head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="mongoDB," />
-
-
-
-
-
-  <link rel="alternate" href="/atom.xml" title="Raincal's Blog" type="application/atom+xml" />
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0" />
-
-
-
-
-
-
-<meta name="description" content="安装mongoDB官网下载安装（Windows安装方法）
+<!doctype html><html class="theme-next pisces use-motion" lang="zh-Hans"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css"><link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css"><link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css"><link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css"><meta name="keywords" content="mongoDB,"><link rel="alternate" href="/atom.xml" title="Raincal's Blog" type="application/atom+xml"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.0"><meta name="description" content="安装mongoDB官网下载安装（Windows安装方法）
 基础知识集合——对应关系数据库中的表
 文档——对应关系数据库中的行
 启动数据库服务定位到安装目录下的bin文件夹里后
 &amp;gt; mongod --dbpath ../data/db
-如没有data/db文件夹，需先创建，dbpath用于指定数据存放位置">
-<meta property="og:type" content="article">
-<meta property="og:title" content="mongoDB常用命令">
-<meta property="og:url" content="https://raincal.top/2015/07/10/mongoDB常用命令/index.html">
-<meta property="og:site_name" content="Raincal's Blog">
-<meta property="og:description" content="安装mongoDB官网下载安装（Windows安装方法）
+如没有data/db文件夹，需先创建，dbpath用于指定数据存放位置"><meta property="og:type" content="article"><meta property="og:title" content="mongoDB常用命令"><meta property="og:url" content="https://raincal.top/2015/07/10/mongoDB常用命令/index.html"><meta property="og:site_name" content="Raincal's Blog"><meta property="og:description" content="安装mongoDB官网下载安装（Windows安装方法）
 基础知识集合——对应关系数据库中的表
 文档——对应关系数据库中的行
 启动数据库服务定位到安装目录下的bin文件夹里后
 &amp;gt; mongod --dbpath ../data/db
-如没有data/db文件夹，需先创建，dbpath用于指定数据存放位置">
-<meta property="og:updated_time" content="2016-04-21T07:45:12.000Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="mongoDB常用命令">
-<meta name="twitter:description" content="安装mongoDB官网下载安装（Windows安装方法）
+如没有data/db文件夹，需先创建，dbpath用于指定数据存放位置"><meta property="og:updated_time" content="2016-04-21T07:45:12.000Z"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="mongoDB常用命令"><meta name="twitter:description" content="安装mongoDB官网下载安装（Windows安装方法）
 基础知识集合——对应关系数据库中的表
 文档——对应关系数据库中的行
 启动数据库服务定位到安装目录下的bin文件夹里后
 &amp;gt; mongod --dbpath ../data/db
-如没有data/db文件夹，需先创建，dbpath用于指定数据存放位置">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post"},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '9981944',
-      author: 'Raincal'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="https://raincal.top/2015/07/10/mongoDB常用命令/"/>
-
-
-
-
-
-  <title> mongoDB常用命令 | Raincal's Blog </title>
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
-
-  
-
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-89637345-1', 'auto');
-  ga('send', 'pageview');
-</script>
-
-
-  <script type="text/javascript">
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?ab32a36a8e64e608dee4c469464c689c";
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-
-
-
-
-
-
-
-
-  
-  
-    
-  
-
-  <div class="container one-collumn sidebar-position-left page-post-detail ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-meta ">
-  
-
-  <div class="custom-logo-site-title">
-    <a href="/"  class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Raincal's Blog</span>
-      <span class="logo-line-after"><i></i></span>
-    </a>
-  </div>
-    
-      <p class="site-subtitle"></p>
-    
-</div>
-
-<div class="site-nav-toggle">
-  <button>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-    <span class="btn-bar"></span>
-  </button>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-        <li class="menu-item menu-item-search">
-          
-            <a href="javascript:;" class="st-search-show-outputs">
-          
-            
-              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
-            
-            搜索
-          </a>
-        </li>
-      
-    </ul>
-  
-
-  
-    <div class="site-search">
-      
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', '12f9CrnGN_2kkb_83wqh','2.0.0');
-</script>
-
-
-
-    </div>
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-
-  <div id="posts" class="posts-expand">
-    
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="https://raincal.top/2015/07/10/mongoDB常用命令/">
-
-  <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
-    <meta itemprop="name" content="Raincal">
-    <meta itemprop="description" content="">
-    <meta itemprop="image" content="/images/avatar.jpg">
-  </span>
-
-  <span style="display:none" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-    <meta itemprop="name" content="Raincal's Blog">
-    <span style="display:none" itemprop="logo" itemscope itemtype="http://schema.org/ImageObject">
-      <img style="display:none;" itemprop="url image" alt="Raincal's Blog" src="">
-    </span>
-  </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                mongoDB常用命令
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2015-07-10T16:47:56+08:00">
-                2015-07-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/mongoDB/" itemprop="url" rel="index">
-                    <span itemprop="name">mongoDB</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2015/07/10/mongoDB常用命令/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2015/07/10/mongoDB常用命令/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-             <span id="/2015/07/10/mongoDB常用命令/" class="leancloud_visitors" data-flag-title="mongoDB常用命令">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><a href="https://www.mongodb.org/" target="_blank" rel="external">mongoDB官网</a>下载安装（<a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/" target="_blank" rel="external">Windows安装方法</a>）</p>
-<h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><p>集合——对应关系数据库中的表</p>
-<p>文档——对应关系数据库中的行</p>
-<h1 id="启动数据库服务"><a href="#启动数据库服务" class="headerlink" title="启动数据库服务"></a>启动数据库服务</h1><p>定位到安装目录下的bin文件夹里后</p>
-<pre><code>&gt; mongod --dbpath ../data/db
-</code></pre><p>如没有<code>data/db</code>文件夹，需先创建，<code>dbpath</code>用于指定数据存放位置</p>
-<a id="more"></a>
-<h1 id="开启一个客户端访问数据库"><a href="#开启一个客户端访问数据库" class="headerlink" title="开启一个客户端访问数据库"></a>开启一个客户端访问数据库</h1><p>同样的bin文件夹下执行</p>
-<pre><code>&gt; mongo
-</code></pre><p>默认连接至<code>test</code>数据库</p>
-<h1 id="显示帮助"><a href="#显示帮助" class="headerlink" title="显示帮助"></a>显示帮助</h1><pre><code>&gt; help
+如没有data/db文件夹，需先创建，dbpath用于指定数据存放位置"><script type="text/javascript" id="hexo.configurations">var NexT=window.NexT||{},CONFIG={root:"/",scheme:"Pisces",sidebar:{position:"left",display:"post",offset:12,offset_float:0,b2t:!1,scrollpercent:!1},fancybox:!0,motion:!0,duoshuo:{userId:"0",author:"博主"},algolia:{applicationID:"",apiKey:"",indexName:"",hits:{per_page:10},labels:{input_placeholder:"Search for Posts",hits_empty:"We didn't find any results for the search: ${query}",hits_stats:"${hits} results found in ${time} ms"}}}</script><link rel="canonical" href="https://raincal.top/2015/07/10/mongoDB常用命令/"><title> mongoDB常用命令 | Raincal's Blog</title></head><body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans"><script>!function(e,t,a,n,c,o,s){e.GoogleAnalyticsObject=c,e[c]=e[c]||function(){(e[c].q=e[c].q||[]).push(arguments)},e[c].l=1*new Date,o=t.createElement(a),s=t.getElementsByTagName(a)[0],o.async=1,o.src="https://www.google-analytics.com/analytics.js",s.parentNode.insertBefore(o,s)}(window,document,"script",0,"ga"),ga("create","UA-89637345-1","auto"),ga("send","pageview")</script><script type="text/javascript">var _hmt=_hmt||[];!function(){var e=document.createElement("script");e.src="https://hm.baidu.com/hm.js?ab32a36a8e64e608dee4c469464c689c";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)}()</script><div class="container sidebar-position-left page-post-detail"><div class="headband"></div><header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="header-inner"><div class="site-brand-wrapper"><div class="site-meta"><div class="custom-logo-site-title"><a href="/" class="brand" rel="start"><span class="logo-line-before"><i></i></span> <span class="site-title">Raincal's Blog</span><span class="logo-line-after"><i></i></span></a></div><p class="site-subtitle"></p></div><div class="site-nav-toggle"> <button><span class="btn-bar"></span><span class="btn-bar"></span><span class="btn-bar"></span></button></div></div><nav class="site-nav"><ul id="menu" class="menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="menu-item-icon fa fa-fw fa-home"></i><br> 首页</a></li><li class="menu-item menu-item-archives"><a href="/archives" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i><br> 归档</a></li><li class="menu-item menu-item-tags"><a href="/tags" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i><br> 标签</a></li><li class="menu-item menu-item-search"><a href="javascript:;" class="st-search-show-outputs"><i class="menu-item-icon fa fa-search fa-fw"></i><br> 搜索</a></li></ul><div class="site-search"><form class="site-search-form"> <input type="text" id="st-search-input" class="st-search-input st-default-search-input"></form><script type="text/javascript">!function(t,e,n,s,c,i,a){t.SwiftypeObject=c,t[c]=t[c]||function(){(t[c].q=t[c].q||[]).push(arguments)},i=e.createElement(n),a=e.getElementsByTagName(n)[0],i.async=1,i.src="//s.swiftypecdn.com/install/v2/st.js",a.parentNode.insertBefore(i,a)}(window,document,"script",0,"_st"),_st("install","12f9CrnGN_2kkb_83wqh","2.0.0")</script></div></nav></div></header><main id="main" class="main"><div class="main-inner"><div class="content-wrap"><div id="content" class="content"><div id="posts" class="posts-expand"><article class="post post-type-normal" itemscope itemtype="http://schema.org/Article"><link itemprop="mainEntityOfPage" href="https://raincal.top/2015/07/10/mongoDB常用命令/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="name" content="Raincal"><meta itemprop="description" content=""><meta itemprop="image" content="/images/avatar.jpg"></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Raincal's Blog"></span><header class="post-header"><h1 class="post-title" itemprop="name headline"> mongoDB常用命令</h1><div class="post-meta"><span class="post-time"><span class="post-meta-item-icon"><i class="fa fa-calendar-o"></i></span> <span class="post-meta-item-text">发表于</span> <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-07-10T16:47:56+08:00">2015-07-10</time></span> <span class="post-category"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-folder-o"></i></span> <span class="post-meta-item-text">分类于</span> <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/mongoDB/" itemprop="url" rel="index"><span itemprop="name">mongoDB</span></a></span></span> <span class="post-comments-count"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-comment-o"></i></span><a href="/2015/07/10/mongoDB常用命令/#comments" itemprop="discussionUrl"><span class="post-comments-count disqus-comment-count" data-disqus-identifier="2015/07/10/mongoDB常用命令/" itemprop="commentCount"></span></a></span> <span id="/2015/07/10/mongoDB常用命令/" class="leancloud_visitors" data-flag-title="mongoDB常用命令"><span class="post-meta-divider">|</span><span class="post-meta-item-icon"><i class="fa fa-eye"></i></span> <span class="post-meta-item-text">阅读次数</span><span class="leancloud-visitors-count"></span></span></div></header><div class="post-body" itemprop="articleBody"><h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><a href="https://www.mongodb.org/" target="_blank" rel="external">mongoDB官网</a>下载安装（<a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/" target="_blank" rel="external">Windows安装方法</a>）</p><h1 id="基础知识"><a href="#基础知识" class="headerlink" title="基础知识"></a>基础知识</h1><p>集合——对应关系数据库中的表</p><p>文档——对应关系数据库中的行</p><h1 id="启动数据库服务"><a href="#启动数据库服务" class="headerlink" title="启动数据库服务"></a>启动数据库服务</h1><p>定位到安装目录下的bin文件夹里后</p><pre><code>&gt; mongod --dbpath ../data/db
+</code></pre><p>如没有<code>data/db</code>文件夹，需先创建，<code>dbpath</code>用于指定数据存放位置</p><a id="more"></a><h1 id="开启一个客户端访问数据库"><a href="#开启一个客户端访问数据库" class="headerlink" title="开启一个客户端访问数据库"></a>开启一个客户端访问数据库</h1><p>同样的bin文件夹下执行</p><pre><code>&gt; mongo
+</code></pre><p>默认连接至<code>test</code>数据库</p><h1 id="显示帮助"><a href="#显示帮助" class="headerlink" title="显示帮助"></a>显示帮助</h1><pre><code>&gt; help
 </code></pre><h1 id="显示所有数据库名称"><a href="#显示所有数据库名称" class="headerlink" title="显示所有数据库名称"></a>显示所有数据库名称</h1><pre><code>&gt; show dbs
 </code></pre><h1 id="切换数据库"><a href="#切换数据库" class="headerlink" title="切换数据库"></a>切换数据库</h1><pre><code>&gt; use test
 </code></pre><h1 id="显示当前连接的数据库名称"><a href="#显示当前连接的数据库名称" class="headerlink" title="显示当前连接的数据库名称"></a>显示当前连接的数据库名称</h1><pre><code>&gt; db
@@ -471,30 +52,22 @@
 &gt; db.users.save({&quot;name&quot;:&quot;kiinlam&quot;, &quot;age&quot;:28})
 // 更新已存在的文档
 &gt; db.users.save({&quot;_id&quot;:&quot;xxx&quot;,&quot;name&quot;:&quot;kiinlam&quot;, &quot;age&quot;:28})
-</code></pre><h1 id="删除操作remove"><a href="#删除操作remove" class="headerlink" title="删除操作remove"></a>删除操作remove</h1><p>删除操作不可恢复</p>
-<h2 id="删除所有，但不删除索引"><a href="#删除所有，但不删除索引" class="headerlink" title="删除所有，但不删除索引"></a>删除所有，但不删除索引</h2><pre><code>&gt; db.users.remove({})
+</code></pre><h1 id="删除操作remove"><a href="#删除操作remove" class="headerlink" title="删除操作remove"></a>删除操作remove</h1><p>删除操作不可恢复</p><h2 id="删除所有，但不删除索引"><a href="#删除所有，但不删除索引" class="headerlink" title="删除所有，但不删除索引"></a>删除所有，但不删除索引</h2><pre><code>&gt; db.users.remove({})
 </code></pre><h2 id="删除指定文档"><a href="#删除指定文档" class="headerlink" title="删除指定文档"></a>删除指定文档</h2><pre><code>&gt; db.users.remove({&quot;name&quot;:&quot;kiinlam&quot;})
 </code></pre><h2 id="删除一条指定文档，如果有多条结果"><a href="#删除一条指定文档，如果有多条结果" class="headerlink" title="删除一条指定文档，如果有多条结果"></a>删除一条指定文档，如果有多条结果</h2><pre><code>&gt; db.users.remove({&quot;name&quot;:&quot;kiinlam&quot;}, true)
-</code></pre><p>完全删除集合，包括索引，应当使用<code>drop</code></p>
-<p>大量删除时，采用复制需要保留的文档到新集合，再用<code>drop</code>删除集合。</p>
-<h1 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h1><pre><code>&gt; db.dropDatabase()
+</code></pre><p>完全删除集合，包括索引，应当使用<code>drop</code></p><p>大量删除时，采用复制需要保留的文档到新集合，再用<code>drop</code>删除集合。</p><h1 id="删除数据库"><a href="#删除数据库" class="headerlink" title="删除数据库"></a>删除数据库</h1><pre><code>&gt; db.dropDatabase()
 </code></pre><h1 id="删除集合"><a href="#删除集合" class="headerlink" title="删除集合"></a>删除集合</h1><pre><code>&gt; db.users.drop()
 </code></pre><h1 id="计数操作count"><a href="#计数操作count" class="headerlink" title="计数操作count"></a>计数操作count</h1><pre><code>&gt; db.users.count()
 &gt; db.users.count({&quot;age&quot;:29})
 </code></pre><h1 id="唯一值查询distinct"><a href="#唯一值查询distinct" class="headerlink" title="唯一值查询distinct"></a>唯一值查询distinct</h1><h2 id="指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组"><a href="#指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组" class="headerlink" title="指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组"></a>指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组</h2><pre><code>&gt; db.users.distinct(&quot;age&quot;)
-</code></pre><h1 id="分组操作group"><a href="#分组操作group" class="headerlink" title="分组操作group"></a>分组操作group</h1><p>按照<code>age</code>进行分组操作，分组结果存放在<code>user</code>中，值为对应<code>age</code>的name值的数组</p>
-<p><code>key</code>：分组依据</p>
-<p><code>initial</code>：初始化函数，每个不同的age组共享同一个函数</p>
-<p><code>$reduce</code>： 第一个参数为当前文档，第二参数为前一次函数操作的累计对象，第一次为<code>initial</code>对应的对象</p>
-<pre><code>&gt; db.users.group({
+</code></pre><h1 id="分组操作group"><a href="#分组操作group" class="headerlink" title="分组操作group"></a>分组操作group</h1><p>按照<code>age</code>进行分组操作，分组结果存放在<code>user</code>中，值为对应<code>age</code>的name值的数组</p><p><code>key</code>：分组依据</p><p><code>initial</code>：初始化函数，每个不同的age组共享同一个函数</p><p><code>$reduce</code>： 第一个参数为当前文档，第二参数为前一次函数操作的累计对象，第一次为<code>initial</code>对应的对象</p><pre><code>&gt; db.users.group({
                     &quot;key&quot;: {&quot;age&quot;: true},
                     &quot;initial&quot;: {&quot;user&quot;: []},
                     &quot;$reduce&quot;: function(cur,prev){
                         prev.user.push(cur.name);
                     }
                 })
-</code></pre><p>假设有数据如下：</p>
-<pre><code>{ &quot;_id&quot; : ObjectId(&quot;55910457607379845607d9e2&quot;), &quot;name&quot; : &quot;kiinlam&quot;, &quot;age&quot; : 29 }
+</code></pre><p>假设有数据如下：</p><pre><code>{ &quot;_id&quot; : ObjectId(&quot;55910457607379845607d9e2&quot;), &quot;name&quot; : &quot;kiinlam&quot;, &quot;age&quot; : 29 }
 { &quot;_id&quot; : ObjectId(&quot;55910468607379845607d9e3&quot;), &quot;name&quot; : &quot;shadow&quot;, &quot;age&quot; : 26 }
 { &quot;_id&quot; : ObjectId(&quot;55910992607379845607d9e5&quot;), &quot;name&quot; : &quot;foo&quot;, &quot;age&quot; : 29 }
 { &quot;_id&quot; : ObjectId(&quot;55911fca607379845607d9e6&quot;), &quot;name&quot; : &quot;dd&quot;, &quot;age&quot; : 22 }
@@ -502,8 +75,7 @@
 { &quot;_id&quot; : ObjectId(&quot;55911fdf607379845607d9e8&quot;), &quot;name&quot; : &quot;gg&quot;, &quot;age&quot; : 22 }
 { &quot;_id&quot; : ObjectId(&quot;55911feb607379845607d9e9&quot;), &quot;name&quot; : &quot;jj&quot;, &quot;age&quot; : 22 }
 { &quot;_id&quot; : ObjectId(&quot;55920545ff40738c1fd0a839&quot;), &quot;name&quot; : &quot;zz&quot;, &quot;age&quot; : 1 }
-</code></pre><p>分组结果为：</p>
-<pre><code>[
+</code></pre><p>分组结果为：</p><pre><code>[
         {
                 &quot;age&quot; : 29,
                 &quot;user&quot; : [
@@ -533,11 +105,9 @@
                 ]
         }
 ]
-</code></pre><h2 id="更多分组功能"><a href="#更多分组功能" class="headerlink" title="更多分组功能"></a>更多分组功能</h2><p>可选参数: <code>condition</code> 和 <code>finalize</code>。</p>
-<pre><code>`condition` —— 过滤条件
+</code></pre><h2 id="更多分组功能"><a href="#更多分组功能" class="headerlink" title="更多分组功能"></a>更多分组功能</h2><p>可选参数: <code>condition</code> 和 <code>finalize</code>。</p><pre><code>`condition` —— 过滤条件
 `finalize` —— 函数，分组完成后执行
-</code></pre><p>过滤掉<code>age</code>大于22的文档，增加属性标明分组中文档的数量</p>
-<pre><code>&gt; db.users.group({
+</code></pre><p>过滤掉<code>age</code>大于22的文档，增加属性标明分组中文档的数量</p><pre><code>&gt; db.users.group({
                     &quot;key&quot;: {&quot;age&quot;: true},
                     &quot;initial&quot;: {&quot;user&quot;: []},
                     &quot;$reduce&quot;: function(cur,prev){
@@ -548,8 +118,7 @@
                         out.count = out.user.length;
                     }
                 })
-</code></pre><p>分组结果为：</p>
-<pre><code>[
+</code></pre><p>分组结果为：</p><pre><code>[
         {
                 &quot;age&quot; : 22,
                 &quot;user&quot; : [
@@ -568,10 +137,7 @@
                 &quot;count&quot; : 1
         }
 ]
-</code></pre><h1 id="mapReduce"><a href="#mapReduce" class="headerlink" title="mapReduce"></a>mapReduce</h1><p><code>map</code>：映射函数，内部调用<code>emit(key,value)</code>，集合按照<code>key</code>进行映射分组。</p>
-<p><code>reduce</code>：简化函数，对<code>map</code>分组后的数据进行分组简化，<code>reduce(key,value)</code>中的<code>key</code>是<code>emit</code>中的<code>key</code>，而<code>value</code>则是<code>emit</code>分组结果的集合。</p>
-<p><code>mapReduce</code>：最后执行的函数，参数为<code>map</code>、<code>reduce</code>和一些可选参数。</p>
-<pre><code>&gt; db.users.mapReduce
+</code></pre><h1 id="mapReduce"><a href="#mapReduce" class="headerlink" title="mapReduce"></a>mapReduce</h1><p><code>map</code>：映射函数，内部调用<code>emit(key,value)</code>，集合按照<code>key</code>进行映射分组。</p><p><code>reduce</code>：简化函数，对<code>map</code>分组后的数据进行分组简化，<code>reduce(key,value)</code>中的<code>key</code>是<code>emit</code>中的<code>key</code>，而<code>value</code>则是<code>emit</code>分组结果的集合。</p><p><code>mapReduce</code>：最后执行的函数，参数为<code>map</code>、<code>reduce</code>和一些可选参数。</p><pre><code>&gt; db.users.mapReduce
 function ( map , reduce , optionsOrOutString ){
     var c = { mapreduce : this._shortName , map : map , reduce : reduce };
     assert( optionsOrOutString , &quot;need to supply an optionsOrOutString&quot; )
@@ -589,22 +155,18 @@ function ( map , reduce , optionsOrOutString ){
     return new MapReduceResult( this._db , raw );
 
 }
-</code></pre><p>创建<code>map</code>函数</p>
-<pre><code>function (){
+</code></pre><p>创建<code>map</code>函数</p><pre><code>function (){
     emit(this.name,{count:1});
 }
-</code></pre><p>创建<code>reduce</code>函数</p>
-<pre><code>function (key,value){
+</code></pre><p>创建<code>reduce</code>函数</p><pre><code>function (key,value){
     var result = {count:0};
     for(var i = 0; i &lt; value.length; i++){
         result.count += value[i].count;
     }
     return result;
 }
-</code></pre><p>执行<code>mapReduce</code>操作</p>
-<pre><code>&gt; db.users.mapReduce(map,reduce,{&quot;out&quot;:&quot;collection&quot;})
-</code></pre><p>假设有数据如下</p>
-<pre><code>{ &quot;_id&quot; : ObjectId(&quot;55910457607379845607d9e2&quot;), &quot;name&quot; : &quot;kiinlam&quot;, &quot;age&quot; : 29 }
+</code></pre><p>执行<code>mapReduce</code>操作</p><pre><code>&gt; db.users.mapReduce(map,reduce,{&quot;out&quot;:&quot;collection&quot;})
+</code></pre><p>假设有数据如下</p><pre><code>{ &quot;_id&quot; : ObjectId(&quot;55910457607379845607d9e2&quot;), &quot;name&quot; : &quot;kiinlam&quot;, &quot;age&quot; : 29 }
 { &quot;_id&quot; : ObjectId(&quot;55910468607379845607d9e3&quot;), &quot;name&quot; : &quot;shadow&quot;, &quot;age&quot; : 26 }
 { &quot;_id&quot; : ObjectId(&quot;55910992607379845607d9e5&quot;), &quot;name&quot; : &quot;foo&quot;, &quot;age&quot; : 29 }
 { &quot;_id&quot; : ObjectId(&quot;55920545ff40738c1fd0a839&quot;), &quot;name&quot; : &quot;zz&quot;, &quot;age&quot; : 1 }
@@ -612,8 +174,7 @@ function ( map , reduce , optionsOrOutString ){
 { &quot;_id&quot; : ObjectId(&quot;55911fd3607379845607d9e7&quot;), &quot;name&quot; : &quot;foo&quot;, &quot;age&quot; : 22 }
 { &quot;_id&quot; : ObjectId(&quot;55911fdf607379845607d9e8&quot;), &quot;name&quot; : &quot;foo&quot;, &quot;age&quot; : 22 }
 { &quot;_id&quot; : ObjectId(&quot;55911feb607379845607d9e9&quot;), &quot;name&quot; : &quot;foo&quot;, &quot;age&quot; : 22 }
-</code></pre><p>输出结果</p>
-<pre><code>{
+</code></pre><p>输出结果</p><pre><code>{
         &quot;result&quot; : &quot;collection&quot;,    // 存放最终结果的集合名
         &quot;timeMillis&quot; : 28,
         &quot;counts&quot; : {
@@ -624,27 +185,20 @@ function ( map , reduce , optionsOrOutString ){
         },
         &quot;ok&quot; : 1
 }
-</code></pre><p>查看集合<code>collection</code>中的结果</p>
-<pre><code>&gt; db.collection.find()
-</code></pre><p>输出结果</p>
-<pre><code>{ &quot;_id&quot; : &quot;foo&quot;, &quot;value&quot; : { &quot;count&quot; : 5 } }
+</code></pre><p>查看集合<code>collection</code>中的结果</p><pre><code>&gt; db.collection.find()
+</code></pre><p>输出结果</p><pre><code>{ &quot;_id&quot; : &quot;foo&quot;, &quot;value&quot; : { &quot;count&quot; : 5 } }
 { &quot;_id&quot; : &quot;kiinlam&quot;, &quot;value&quot; : { &quot;count&quot; : 1 } }
 { &quot;_id&quot; : &quot;shadow&quot;, &quot;value&quot; : { &quot;count&quot; : 1 } }
 { &quot;_id&quot; : &quot;zz&quot;, &quot;value&quot; : { &quot;count&quot; : 1 } }
-</code></pre><h1 id="游标"><a href="#游标" class="headerlink" title="游标"></a>游标</h1><p>游标只表示一个引用，并不是真正的执行，在需要的时候，通过for循环或<code>next()</code>方法进行遍历读取，枚举结束后，游标销毁，不再返回数据。</p>
-<p>申明一个游标</p>
-<pre><code>&gt; var list = db.collection.find()
-</code></pre><p>通过<code>forEach</code>遍历游标</p>
-<pre><code>&gt; list.forEach(function(i){
+</code></pre><h1 id="游标"><a href="#游标" class="headerlink" title="游标"></a>游标</h1><p>游标只表示一个引用，并不是真正的执行，在需要的时候，通过for循环或<code>next()</code>方法进行遍历读取，枚举结束后，游标销毁，不再返回数据。</p><p>申明一个游标</p><pre><code>&gt; var list = db.collection.find()
+</code></pre><p>通过<code>forEach</code>遍历游标</p><pre><code>&gt; list.forEach(function(i){
       print(i._id);
   })
-</code></pre><p>输出结果</p>
-<pre><code>foo
+</code></pre><p>输出结果</p><pre><code>foo
 kiinlam
 shadow
 zz
-</code></pre><p>或者通过<code>next</code>遍历集合</p>
-<pre><code>&gt; var list = db.collection.find()
+</code></pre><p>或者通过<code>next</code>遍历集合</p><pre><code>&gt; var list = db.collection.find()
 &gt; list.next()
 { &quot;_id&quot; : &quot;foo&quot;, &quot;value&quot; : { &quot;count&quot; : 5 } }
 &gt; list.next()
@@ -681,8 +235,7 @@ zz
 &gt; use local
 // 在sources中加入源地址
 &gt; db.sources.insert({&quot;host&quot;:&quot;127.0.0.1:27017&quot;})
-</code></pre><h1 id="副本集replSet"><a href="#副本集replSet" class="headerlink" title="副本集replSet"></a>副本集replSet</h1><p>该架构没有特定的主数据库，一个数据库宕机了，另一个数据库会顶上</p>
-<h2 id="创建第一个数据库服务器"><a href="#创建第一个数据库服务器" class="headerlink" title="创建第一个数据库服务器"></a>创建第一个数据库服务器</h2><pre><code>// 需要指定集群名及下一个数据库地址
+</code></pre><h1 id="副本集replSet"><a href="#副本集replSet" class="headerlink" title="副本集replSet"></a>副本集replSet</h1><p>该架构没有特定的主数据库，一个数据库宕机了，另一个数据库会顶上</p><h2 id="创建第一个数据库服务器"><a href="#创建第一个数据库服务器" class="headerlink" title="创建第一个数据库服务器"></a>创建第一个数据库服务器</h2><pre><code>// 需要指定集群名及下一个数据库地址
 &gt; mongod --dbpath=XXX --port 2222 --replSet mySet/127.0.0.1:3333
 </code></pre><h2 id="创建第二个数据库服务器"><a href="#创建第二个数据库服务器" class="headerlink" title="创建第二个数据库服务器"></a>创建第二个数据库服务器</h2><pre><code>&gt; mongod --dbpath=XXX --port 3333 --replSet mySet/127.0.0.1:2222
 </code></pre><h2 id="初始化副本集"><a href="#初始化副本集" class="headerlink" title="初始化副本集"></a>初始化副本集</h2><pre><code>// 进入任一数据库的admin集合
@@ -710,15 +263,7 @@ zz
 &gt; rs.addArb(&quot;127.0.0.1:4444&quot;)
 // 查看服务器集群状态
 &gt; rs.status()
-</code></pre><h1 id="分片技术"><a href="#分片技术" class="headerlink" title="分片技术"></a>分片技术</h1><p>将集合进行拆分，将拆分的数据均摊到几个分片上。</p>
-<p>主要参与者：</p>
-<ul>
-<li>客户端</li>
-<li>路由服务器mongos</li>
-<li>配置服务器</li>
-<li>分片数据库实例</li>
-</ul>
-<h2 id="开启配置服务器config"><a href="#开启配置服务器config" class="headerlink" title="开启配置服务器config"></a>开启配置服务器config</h2><pre><code>&gt; mongod --dbpath=XXX --port 2222
+</code></pre><h1 id="分片技术"><a href="#分片技术" class="headerlink" title="分片技术"></a>分片技术</h1><p>将集合进行拆分，将拆分的数据均摊到几个分片上。</p><p>主要参与者：</p><ul><li>客户端</li><li>路由服务器mongos</li><li>配置服务器</li><li>分片数据库实例</li></ul><h2 id="开启配置服务器config"><a href="#开启配置服务器config" class="headerlink" title="开启配置服务器config"></a>开启配置服务器config</h2><pre><code>&gt; mongod --dbpath=XXX --port 2222
 </code></pre><h2 id="开启路由服务器mongos"><a href="#开启路由服务器mongos" class="headerlink" title="开启路由服务器mongos"></a>开启路由服务器mongos</h2><pre><code>// 指定配置服务器
 &gt; mongos --port 3333 --configdb=127.0.0.1:2222
 </code></pre><h2 id="开启分片数据库服务器mongod"><a href="#开启分片数据库服务器mongod" class="headerlink" title="开启分片数据库服务器mongod"></a>开启分片数据库服务器mongod</h2><pre><code>&gt; mongod --dbpath=XXX --port 4444
@@ -741,538 +286,20 @@ zz
 // 在mongos中查看数据分片情况
 &gt; use test
 &gt; db.printShardingStatus()
-</code></pre><h1 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h1><p>运维通常会涉及到以下4个方面</p>
-<ul>
-<li>安装部署</li>
-<li>状态监控</li>
-<li>安全认证</li>
-<li>备份和恢复</li>
-</ul>
-<h2 id="安装部署为windows服务"><a href="#安装部署为windows服务" class="headerlink" title="安装部署为windows服务"></a>安装部署为windows服务</h2><pre><code>// 指定日志路径，添加install参数
+</code></pre><h1 id="运维"><a href="#运维" class="headerlink" title="运维"></a>运维</h1><p>运维通常会涉及到以下4个方面</p><ul><li>安装部署</li><li>状态监控</li><li>安全认证</li><li>备份和恢复</li></ul><h2 id="安装部署为windows服务"><a href="#安装部署为windows服务" class="headerlink" title="安装部署为windows服务"></a>安装部署为windows服务</h2><pre><code>// 指定日志路径，添加install参数
 &gt; mongod --dbpath=XXX --logpath=XXX --port=2222 --install
 // 启动服务
 &gt; net start MongoDB
-</code></pre><h2 id="状态监控"><a href="#状态监控" class="headerlink" title="状态监控"></a>状态监控</h2><h3 id="静态统计"><a href="#静态统计" class="headerlink" title="静态统计"></a>静态统计</h3><p><em>db.stats()</em></p>
-<pre><code>// 查看单个数据库状态
+</code></pre><h2 id="状态监控"><a href="#状态监控" class="headerlink" title="状态监控"></a>状态监控</h2><h3 id="静态统计"><a href="#静态统计" class="headerlink" title="静态统计"></a>静态统计</h3><p><em>db.stats()</em></p><pre><code>// 查看单个数据库状态
 &gt; db.stats()
-</code></pre><p><code>stats</code>比较简单，可以参考<a href="http://www.cnblogs.com/xuegang/archive/2011/10/13/2209965.html" target="_blank" rel="external">db.stats()</a>一文</p>
-<p><em>db.serverStatus()</em></p>
-<pre><code>// 查看整个mongodb的状态
+</code></pre><p><code>stats</code>比较简单，可以参考<a href="http://www.cnblogs.com/xuegang/archive/2011/10/13/2209965.html" target="_blank" rel="external">db.stats()</a>一文</p><p><em>db.serverStatus()</em></p><pre><code>// 查看整个mongodb的状态
 // 进入admin集合
 &gt; mongo 127.0.0.1:2222/admin
 // 查看状态
 &gt; db.serverStatus()
-</code></pre><p><code>serverStatus</code>的参数很多，可以参考<a href="http://www.cnblogs.com/xuegang/archive/2011/10/13/2210339.html" target="_blank" rel="external">db.serverStatus()</a>一文</p>
-<h3 id="实时统计"><a href="#实时统计" class="headerlink" title="实时统计"></a>实时统计</h3><pre><code>&gt; mongostat --port 2222
-</code></pre><h2 id="安全认证"><a href="#安全认证" class="headerlink" title="安全认证"></a>安全认证</h2><p><em>TODO</em></p>
-<p>有点复杂，偷懒了，参考<a href="http://docs.mongodb.org/manual/security/" target="_blank" rel="external">安全认证</a></p>
-<h2 id="备份和恢复"><a href="#备份和恢复" class="headerlink" title="备份和恢复"></a>备份和恢复</h2><pre><code>// 备份test数据库到D:\mongodb\backup
+</code></pre><p><code>serverStatus</code>的参数很多，可以参考<a href="http://www.cnblogs.com/xuegang/archive/2011/10/13/2210339.html" target="_blank" rel="external">db.serverStatus()</a>一文</p><h3 id="实时统计"><a href="#实时统计" class="headerlink" title="实时统计"></a>实时统计</h3><pre><code>&gt; mongostat --port 2222
+</code></pre><h2 id="安全认证"><a href="#安全认证" class="headerlink" title="安全认证"></a>安全认证</h2><p><em>TODO</em></p><p>有点复杂，偷懒了，参考<a href="http://docs.mongodb.org/manual/security/" target="_blank" rel="external">安全认证</a></p><h2 id="备份和恢复"><a href="#备份和恢复" class="headerlink" title="备份和恢复"></a>备份和恢复</h2><pre><code>// 备份test数据库到D:\mongodb\backup
 &gt; mongodump --port 2222 -d test -o D:\mongodb\backup
 // 恢复数据，drop表示恢复前删除原有数据
 &gt; mongorestore --port 2222 -d test --drop D:\mongodb\backup
-</code></pre><hr>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul>
-<li><a href="https://www.mongodb.org/" target="_blank" rel="external">mongoDB</a></li>
-<li><a href="http://docs.mongodb.org/manual/" target="_blank" rel="external">MongoDB文档</a></li>
-<li><a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/" target="_blank" rel="external">install-mongodb-on-windows</a></li>
-<li><a href="http://www.cnblogs.com/huangxincheng/category/355399.html" target="_blank" rel="external">8天学通MongoDB系列</a></li>
-</ul>
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-    <div>
-      
-        
-
-      
-    </div>
-
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/mongoDB/" rel="tag"># mongoDB</a>
-          
-        </div>
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2015/05/09/Mac-OS终端使用subl运行Sublime-Text-3/" rel="next" title="Mac OS终端使用subl运行Sublime Text 3">
-                <i class="fa fa-chevron-left"></i> Mac OS终端使用subl运行Sublime Text 3
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/06/30/lodash/" rel="prev" title="10 个可用 ES6 替代的 Lodash 特性">
-                10 个可用 ES6 替代的 Lodash 特性 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-
-      
-      
-    </footer>
-  </article>
-
-
-
-    <div class="post-spread">
-      
-    </div>
-  </div>
-
-
-          </div>
-          
-
-
-          
-  <div class="comments" id="comments">
-    
-      <div class="ds-thread" data-thread-key="2015/07/10/mongoDB常用命令/"
-           data-title="mongoDB常用命令" data-url="https://raincal.top/2015/07/10/mongoDB常用命令/">
-      </div>
-    
-  </div>
-
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-        <ul class="sidebar-nav motion-element">
-          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
-            文章目录
-          </li>
-          <li class="sidebar-nav-overview" data-target="site-overview">
-            站点概览
-          </li>
-        </ul>
-      
-
-      <section class="site-overview sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.jpg"
-               alt="Raincal" />
-          <p class="site-author-name" itemprop="name">Raincal</p>
-          <p class="site-description motion-element" itemprop="description"></p>
-        </div>
-        <nav class="site-state motion-element">
-        
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">3</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-categories">
-              
-                <span class="site-state-item-count">1</span>
-                <span class="site-state-item-name">分类</span>
-              
-            </div>
-          
-
-          
-            <div class="site-state-item site-state-tags">
-              <a href="/tags">
-                <span class="site-state-item-count">2</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
-            </div>
-          
-
-        </nav>
-
-        
-          <div class="feed-link motion-element">
-            <a href="/atom.xml" rel="alternate">
-              <i class="fa fa-rss"></i>
-              RSS
-            </a>
-          </div>
-        
-
-        <div class="links-of-author motion-element">
-          
-            
-              <span class="links-of-author-item">
-                <a href="https://github.com/Raincal" target="_blank" title="GitHub">
-                  
-                    <i class="fa fa-fw fa-github"></i>
-                  
-                  GitHub
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://twitter.com/cyj228" target="_blank" title="Twitter">
-                  
-                    <i class="fa fa-fw fa-twitter"></i>
-                  
-                  Twitter
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="http://weibo.com/cyj228" target="_blank" title="Weibo">
-                  
-                    <i class="fa fa-fw fa-weibo"></i>
-                  
-                  Weibo
-                </a>
-              </span>
-            
-              <span class="links-of-author-item">
-                <a href="https://www.facebook.com/cyj228" target="_blank" title="Facebook">
-                  
-                    <i class="fa fa-fw fa-facebook"></i>
-                  
-                  Facebook
-                </a>
-              </span>
-            
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-      <!--noindex-->
-        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
-          <div class="post-toc">
-
-            
-              
-            
-
-            
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-number">2.</span> <span class="nav-text">基础知识</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动数据库服务"><span class="nav-number">3.</span> <span class="nav-text">启动数据库服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开启一个客户端访问数据库"><span class="nav-number">4.</span> <span class="nav-text">开启一个客户端访问数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示帮助"><span class="nav-number">5.</span> <span class="nav-text">显示帮助</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示所有数据库名称"><span class="nav-number">6.</span> <span class="nav-text">显示所有数据库名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#切换数据库"><span class="nav-number">7.</span> <span class="nav-text">切换数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示当前连接的数据库名称"><span class="nav-number">8.</span> <span class="nav-text">显示当前连接的数据库名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示当前数据库所有集合"><span class="nav-number">9.</span> <span class="nav-text">显示当前数据库所有集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示数据库支持的方法"><span class="nav-number">10.</span> <span class="nav-text">显示数据库支持的方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示集合支持的方法"><span class="nav-number">11.</span> <span class="nav-text">显示集合支持的方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建集合"><span class="nav-number">12.</span> <span class="nav-text">创建集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插入操作insert"><span class="nav-number">13.</span> <span class="nav-text">插入操作insert</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查询操作find"><span class="nav-number">14.</span> <span class="nav-text">查询操作find</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查找所有文档"><span class="nav-number">14.1.</span> <span class="nav-text">查找所有文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找指定文档"><span class="nav-number">14.2.</span> <span class="nav-text">查找指定文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询一条"><span class="nav-number">14.3.</span> <span class="nav-text">查询一条</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大于-gt"><span class="nav-number">14.4.</span> <span class="nav-text">大于$gt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大于等于-gte"><span class="nav-number">14.5.</span> <span class="nav-text">大于等于$gte</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小于-lt"><span class="nav-number">14.6.</span> <span class="nav-text">小于$lt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小于等于-gte"><span class="nav-number">14.7.</span> <span class="nav-text">小于等于$gte</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不等于-ne"><span class="nav-number">14.8.</span> <span class="nav-text">不等于$ne</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#或-or"><span class="nav-number">14.9.</span> <span class="nav-text">或$or</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在集合中-in"><span class="nav-number">14.10.</span> <span class="nav-text">在集合中$in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不在集合中-nin"><span class="nav-number">14.11.</span> <span class="nav-text">不在集合中$nin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则查询"><span class="nav-number">14.12.</span> <span class="nav-text">正则查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#筛选查询-where"><span class="nav-number">14.13.</span> <span class="nav-text">筛选查询$where</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#限制查询数量limit"><span class="nav-number">14.14.</span> <span class="nav-text">限制查询数量limit</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新操作update"><span class="nav-number">15.</span> <span class="nav-text">更新操作update</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定文档全部更新，等于覆盖"><span class="nav-number">15.1.</span> <span class="nav-text">指定文档全部更新，等于覆盖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局部更新一：增量更新-inc"><span class="nav-number">15.2.</span> <span class="nav-text">局部更新一：增量更新$inc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局部更新二：字段修改-set"><span class="nav-number">15.3.</span> <span class="nav-text">局部更新二：字段修改$set</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新增更新：如果不存在，就新增一条"><span class="nav-number">15.4.</span> <span class="nav-text">新增更新：如果不存在，就新增一条</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批量更新"><span class="nav-number">15.5.</span> <span class="nav-text">批量更新</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#保存操作save"><span class="nav-number">16.</span> <span class="nav-text">保存操作save</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除操作remove"><span class="nav-number">17.</span> <span class="nav-text">删除操作remove</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除所有，但不删除索引"><span class="nav-number">17.1.</span> <span class="nav-text">删除所有，但不删除索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除指定文档"><span class="nav-number">17.2.</span> <span class="nav-text">删除指定文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除一条指定文档，如果有多条结果"><span class="nav-number">17.3.</span> <span class="nav-text">删除一条指定文档，如果有多条结果</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除数据库"><span class="nav-number">18.</span> <span class="nav-text">删除数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除集合"><span class="nav-number">19.</span> <span class="nav-text">删除集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计数操作count"><span class="nav-number">20.</span> <span class="nav-text">计数操作count</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#唯一值查询distinct"><span class="nav-number">21.</span> <span class="nav-text">唯一值查询distinct</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组"><span class="nav-number">21.1.</span> <span class="nav-text">指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分组操作group"><span class="nav-number">22.</span> <span class="nav-text">分组操作group</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#更多分组功能"><span class="nav-number">22.1.</span> <span class="nav-text">更多分组功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mapReduce"><span class="nav-number">23.</span> <span class="nav-text">mapReduce</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#游标"><span class="nav-number">24.</span> <span class="nav-text">游标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#索引ensureIndex"><span class="nav-number">25.</span> <span class="nav-text">索引ensureIndex</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#建立索引"><span class="nav-number">25.1.</span> <span class="nav-text">建立索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#唯一索引"><span class="nav-number">25.2.</span> <span class="nav-text">唯一索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组合索引"><span class="nav-number">25.3.</span> <span class="nav-text">组合索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看索引"><span class="nav-number">25.4.</span> <span class="nav-text">查看索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#按指定索引查询"><span class="nav-number">25.5.</span> <span class="nav-text">按指定索引查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除索引"><span class="nav-number">25.6.</span> <span class="nav-text">删除索引</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性能分析函数explain"><span class="nav-number">26.</span> <span class="nav-text">性能分析函数explain</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主从数据库部署"><span class="nav-number">27.</span> <span class="nav-text">主从数据库部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建主数据库master"><span class="nav-number">27.1.</span> <span class="nav-text">创建主数据库master</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建从数据库slave"><span class="nav-number">27.2.</span> <span class="nav-text">创建从数据库slave</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后期指定主数据库源"><span class="nav-number">27.3.</span> <span class="nav-text">后期指定主数据库源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#副本集replSet"><span class="nav-number">28.</span> <span class="nav-text">副本集replSet</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建第一个数据库服务器"><span class="nav-number">28.1.</span> <span class="nav-text">创建第一个数据库服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建第二个数据库服务器"><span class="nav-number">28.2.</span> <span class="nav-text">创建第二个数据库服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化副本集"><span class="nav-number">28.3.</span> <span class="nav-text">初始化副本集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#仲裁服务器"><span class="nav-number">28.4.</span> <span class="nav-text">仲裁服务器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分片技术"><span class="nav-number">29.</span> <span class="nav-text">分片技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开启配置服务器config"><span class="nav-number">29.1.</span> <span class="nav-text">开启配置服务器config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启路由服务器mongos"><span class="nav-number">29.2.</span> <span class="nav-text">开启路由服务器mongos</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启分片数据库服务器mongod"><span class="nav-number">29.3.</span> <span class="nav-text">开启分片数据库服务器mongod</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务配置"><span class="nav-number">29.4.</span> <span class="nav-text">服务配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运维"><span class="nav-number">30.</span> <span class="nav-text">运维</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装部署为windows服务"><span class="nav-number">30.1.</span> <span class="nav-text">安装部署为windows服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#状态监控"><span class="nav-number">30.2.</span> <span class="nav-text">状态监控</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态统计"><span class="nav-number">30.2.1.</span> <span class="nav-text">静态统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实时统计"><span class="nav-number">30.2.2.</span> <span class="nav-text">实时统计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全认证"><span class="nav-number">30.3.</span> <span class="nav-text">安全认证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备份和恢复"><span class="nav-number">30.4.</span> <span class="nav-text">备份和恢复</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">30.5.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div>
-            
-
-          </div>
-        </section>
-      <!--/noindex-->
-      
-
-    </div>
-  </aside>
-
-
-        
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy;  2015 - 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Raincal</span>
-</div>
-
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
-    </footer>
-
-    <div class="back-to-top">
-      <i class="fa fa-arrow-up"></i>
-    </div>
-  </div>
-
-  
-
-<script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
-</script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
-
-
-
-  
-  
-
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
-
-
-
-  
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
-
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
-
-
-
-  
-
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"cyj"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-      
-      <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-      <script src="/js/src/hook-duoshuo.js?v=5.1.0"></script>
-    
-    
-    <script src="/lib/ua-parser-js/dist/ua-parser.min.js?v=0.7.9"></script>
-    <script src="/js/src/hook-duoshuo.js"></script>
-  
-
-
-
-
-
-
-
-
-
-
-  
-  
-
-  
-
-  
-
-  
-  <script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script>
-  <script>AV.initialize("xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz", "TgK8LqquaVhiY6lmrw6U8zcW");</script>
-  <script>
-    function showTime(Counter) {
-      var query = new AV.Query(Counter);
-      var entries = [];
-      var $visitors = $(".leancloud_visitors");
-
-      $visitors.each(function () {
-        entries.push( $(this).attr("id").trim() );
-      });
-
-      query.containedIn('url', entries);
-      query.find()
-        .done(function (results) {
-          var COUNT_CONTAINER_REF = '.leancloud-visitors-count';
-
-          if (results.length === 0) {
-            $visitors.find(COUNT_CONTAINER_REF).text(0);
-            return;
-          }
-
-          for (var i = 0; i < results.length; i++) {
-            var item = results[i];
-            var url = item.get('url');
-            var time = item.get('time');
-            var element = document.getElementById(url);
-
-            $(element).find(COUNT_CONTAINER_REF).text(time);
-          }
-          for(var i = 0; i < entries.length; i++) {
-            var url = entries[i];
-            var element = document.getElementById(url);
-            var countSpan = $(element).find(COUNT_CONTAINER_REF);
-            if( countSpan.text() == '') {
-              countSpan.text(0);
-            }
-          }
-        })
-        .fail(function (object, error) {
-          console.log("Error: " + error.code + " " + error.message);
-        });
-    }
-
-    function addCount(Counter) {
-      var $visitors = $(".leancloud_visitors");
-      var url = $visitors.attr('id').trim();
-      var title = $visitors.attr('data-flag-title').trim();
-      var query = new AV.Query(Counter);
-
-      query.equalTo("url", url);
-      query.find({
-        success: function(results) {
-          if (results.length > 0) {
-            var counter = results[0];
-            counter.fetchWhenSave(true);
-            counter.increment("time");
-            counter.save(null, {
-              success: function(counter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(counter.get('time'));
-              },
-              error: function(counter, error) {
-                console.log('Failed to save Visitor num, with error message: ' + error.message);
-              }
-            });
-          } else {
-            var newcounter = new Counter();
-            /* Set ACL */
-            var acl = new AV.ACL();
-            acl.setPublicReadAccess(true);
-            acl.setPublicWriteAccess(true);
-            newcounter.setACL(acl);
-            /* End Set ACL */
-            newcounter.set("title", title);
-            newcounter.set("url", url);
-            newcounter.set("time", 1);
-            newcounter.save(null, {
-              success: function(newcounter) {
-                var $element = $(document.getElementById(url));
-                $element.find('.leancloud-visitors-count').text(newcounter.get('time'));
-              },
-              error: function(newcounter, error) {
-                console.log('Failed to create');
-              }
-            });
-          }
-        },
-        error: function(error) {
-          console.log('Error:' + error.code + " " + error.message);
-        }
-      });
-    }
-
-    $(function() {
-      var Counter = AV.Object.extend("Counter");
-      if ($('.leancloud_visitors').length == 1) {
-        addCount(Counter);
-      } else if ($('.post-title-link').length > 1) {
-        showTime(Counter);
-      }
-    });
-  </script>
-
-
-
-  
-
-  
-
-
-</body>
-</html>
+</code></pre><hr><h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ul><li><a href="https://www.mongodb.org/" target="_blank" rel="external">mongoDB</a></li><li><a href="http://docs.mongodb.org/manual/" target="_blank" rel="external">MongoDB文档</a></li><li><a href="http://docs.mongodb.org/manual/tutorial/install-mongodb-on-windows/" target="_blank" rel="external">install-mongodb-on-windows</a></li><li><a href="http://www.cnblogs.com/huangxincheng/category/355399.html" target="_blank" rel="external">8天学通MongoDB系列</a></li></ul></div><div></div><div></div><div></div><footer class="post-footer"><div class="post-tags"> <a href="/tags/mongoDB/" rel="tag"># mongoDB</a></div><div class="post-nav"><div class="post-nav-next post-nav-item"><a href="/2015/05/09/Mac-OS终端使用subl运行Sublime-Text-3/" rel="next" title="Mac OS终端使用subl运行Sublime Text 3"><i class="fa fa-chevron-left"></i> Mac OS终端使用subl运行Sublime Text 3</a></div><span class="post-nav-divider"></span><div class="post-nav-prev post-nav-item"> <a href="/2016/06/30/lodash/" rel="prev" title="10 个可用 ES6 替代的 Lodash 特性">10 个可用 ES6 替代的 Lodash 特性<i class="fa fa-chevron-right"></i></a></div></div></footer></article><div class="post-spread"></div></div></div><div class="comments" id="comments"><div id="disqus_thread"><noscript> Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript></div></div></div><div class="sidebar-toggle"><div class="sidebar-toggle-line-wrap"><span class="sidebar-toggle-line sidebar-toggle-line-first"></span><span class="sidebar-toggle-line sidebar-toggle-line-middle"></span><span class="sidebar-toggle-line sidebar-toggle-line-last"></span></div></div><aside id="sidebar" class="sidebar"><div class="sidebar-inner"><ul class="sidebar-nav motion-element"><li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap"> 文章目录</li><li class="sidebar-nav-overview" data-target="site-overview"> 站点概览</li></ul><section class="site-overview sidebar-panel"><div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person"> <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="Raincal"><p class="site-author-name" itemprop="name">Raincal</p><p class="site-description motion-element" itemprop="description"></p></div><nav class="site-state motion-element"><div class="site-state-item site-state-posts"> <a href="/archives"><span class="site-state-item-count">3</span> <span class="site-state-item-name">日志</span></a></div><div class="site-state-item site-state-categories"> <span class="site-state-item-count">1</span> <span class="site-state-item-name">分类</span></div><div class="site-state-item site-state-tags"> <a href="/tags/index.html"><span class="site-state-item-count">2</span> <span class="site-state-item-name">标签</span></a></div></nav><div class="feed-link motion-element"><a href="/atom.xml" rel="alternate"><i class="fa fa-rss"></i> RSS</a></div><div class="links-of-author motion-element"><span class="links-of-author-item"><a href="https://github.com/Raincal" target="_blank" title="GitHub"><i class="fa fa-fw fa-github"></i> GitHub</a></span><span class="links-of-author-item"><a href="https://twitter.com/cyj228" target="_blank" title="Twitter"><i class="fa fa-fw fa-twitter"></i> Twitter</a></span><span class="links-of-author-item"><a href="http://weibo.com/cyj228" target="_blank" title="Weibo"><i class="fa fa-fw fa-weibo"></i> Weibo</a></span><span class="links-of-author-item"><a href="https://www.facebook.com/cyj228" target="_blank" title="Facebook"><i class="fa fa-fw fa-facebook"></i> Facebook</a></span></div><div class="cc-license motion-element" itemprop="license"> <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" class="cc-opacity" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a></div></section><section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active"><div class="post-toc"><div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#基础知识"><span class="nav-number">2.</span> <span class="nav-text">基础知识</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#启动数据库服务"><span class="nav-number">3.</span> <span class="nav-text">启动数据库服务</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#开启一个客户端访问数据库"><span class="nav-number">4.</span> <span class="nav-text">开启一个客户端访问数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示帮助"><span class="nav-number">5.</span> <span class="nav-text">显示帮助</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示所有数据库名称"><span class="nav-number">6.</span> <span class="nav-text">显示所有数据库名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#切换数据库"><span class="nav-number">7.</span> <span class="nav-text">切换数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示当前连接的数据库名称"><span class="nav-number">8.</span> <span class="nav-text">显示当前连接的数据库名称</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示当前数据库所有集合"><span class="nav-number">9.</span> <span class="nav-text">显示当前数据库所有集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示数据库支持的方法"><span class="nav-number">10.</span> <span class="nav-text">显示数据库支持的方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#显示集合支持的方法"><span class="nav-number">11.</span> <span class="nav-text">显示集合支持的方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#创建集合"><span class="nav-number">12.</span> <span class="nav-text">创建集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#插入操作insert"><span class="nav-number">13.</span> <span class="nav-text">插入操作insert</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#查询操作find"><span class="nav-number">14.</span> <span class="nav-text">查询操作find</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#查找所有文档"><span class="nav-number">14.1.</span> <span class="nav-text">查找所有文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查找指定文档"><span class="nav-number">14.2.</span> <span class="nav-text">查找指定文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查询一条"><span class="nav-number">14.3.</span> <span class="nav-text">查询一条</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大于-gt"><span class="nav-number">14.4.</span> <span class="nav-text">大于$gt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#大于等于-gte"><span class="nav-number">14.5.</span> <span class="nav-text">大于等于$gte</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小于-lt"><span class="nav-number">14.6.</span> <span class="nav-text">小于$lt</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#小于等于-gte"><span class="nav-number">14.7.</span> <span class="nav-text">小于等于$gte</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不等于-ne"><span class="nav-number">14.8.</span> <span class="nav-text">不等于$ne</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#或-or"><span class="nav-number">14.9.</span> <span class="nav-text">或$or</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#在集合中-in"><span class="nav-number">14.10.</span> <span class="nav-text">在集合中$in</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#不在集合中-nin"><span class="nav-number">14.11.</span> <span class="nav-text">不在集合中$nin</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#正则查询"><span class="nav-number">14.12.</span> <span class="nav-text">正则查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#筛选查询-where"><span class="nav-number">14.13.</span> <span class="nav-text">筛选查询$where</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#限制查询数量limit"><span class="nav-number">14.14.</span> <span class="nav-text">限制查询数量limit</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#更新操作update"><span class="nav-number">15.</span> <span class="nav-text">更新操作update</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定文档全部更新，等于覆盖"><span class="nav-number">15.1.</span> <span class="nav-text">指定文档全部更新，等于覆盖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局部更新一：增量更新-inc"><span class="nav-number">15.2.</span> <span class="nav-text">局部更新一：增量更新$inc</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#局部更新二：字段修改-set"><span class="nav-number">15.3.</span> <span class="nav-text">局部更新二：字段修改$set</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新增更新：如果不存在，就新增一条"><span class="nav-number">15.4.</span> <span class="nav-text">新增更新：如果不存在，就新增一条</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#批量更新"><span class="nav-number">15.5.</span> <span class="nav-text">批量更新</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#保存操作save"><span class="nav-number">16.</span> <span class="nav-text">保存操作save</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除操作remove"><span class="nav-number">17.</span> <span class="nav-text">删除操作remove</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#删除所有，但不删除索引"><span class="nav-number">17.1.</span> <span class="nav-text">删除所有，但不删除索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除指定文档"><span class="nav-number">17.2.</span> <span class="nav-text">删除指定文档</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除一条指定文档，如果有多条结果"><span class="nav-number">17.3.</span> <span class="nav-text">删除一条指定文档，如果有多条结果</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除数据库"><span class="nav-number">18.</span> <span class="nav-text">删除数据库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#删除集合"><span class="nav-number">19.</span> <span class="nav-text">删除集合</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#计数操作count"><span class="nav-number">20.</span> <span class="nav-text">计数操作count</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#唯一值查询distinct"><span class="nav-number">21.</span> <span class="nav-text">唯一值查询distinct</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组"><span class="nav-number">21.1.</span> <span class="nav-text">指定字段有多个相同时，只取一个，返回指定字段的值组合成的数组</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分组操作group"><span class="nav-number">22.</span> <span class="nav-text">分组操作group</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#更多分组功能"><span class="nav-number">22.1.</span> <span class="nav-text">更多分组功能</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#mapReduce"><span class="nav-number">23.</span> <span class="nav-text">mapReduce</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#游标"><span class="nav-number">24.</span> <span class="nav-text">游标</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#索引ensureIndex"><span class="nav-number">25.</span> <span class="nav-text">索引ensureIndex</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#建立索引"><span class="nav-number">25.1.</span> <span class="nav-text">建立索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#唯一索引"><span class="nav-number">25.2.</span> <span class="nav-text">唯一索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#组合索引"><span class="nav-number">25.3.</span> <span class="nav-text">组合索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#查看索引"><span class="nav-number">25.4.</span> <span class="nav-text">查看索引</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#按指定索引查询"><span class="nav-number">25.5.</span> <span class="nav-text">按指定索引查询</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#删除索引"><span class="nav-number">25.6.</span> <span class="nav-text">删除索引</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#性能分析函数explain"><span class="nav-number">26.</span> <span class="nav-text">性能分析函数explain</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#主从数据库部署"><span class="nav-number">27.</span> <span class="nav-text">主从数据库部署</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建主数据库master"><span class="nav-number">27.1.</span> <span class="nav-text">创建主数据库master</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建从数据库slave"><span class="nav-number">27.2.</span> <span class="nav-text">创建从数据库slave</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#后期指定主数据库源"><span class="nav-number">27.3.</span> <span class="nav-text">后期指定主数据库源</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#副本集replSet"><span class="nav-number">28.</span> <span class="nav-text">副本集replSet</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#创建第一个数据库服务器"><span class="nav-number">28.1.</span> <span class="nav-text">创建第一个数据库服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建第二个数据库服务器"><span class="nav-number">28.2.</span> <span class="nav-text">创建第二个数据库服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#初始化副本集"><span class="nav-number">28.3.</span> <span class="nav-text">初始化副本集</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#仲裁服务器"><span class="nav-number">28.4.</span> <span class="nav-text">仲裁服务器</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#分片技术"><span class="nav-number">29.</span> <span class="nav-text">分片技术</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#开启配置服务器config"><span class="nav-number">29.1.</span> <span class="nav-text">开启配置服务器config</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启路由服务器mongos"><span class="nav-number">29.2.</span> <span class="nav-text">开启路由服务器mongos</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开启分片数据库服务器mongod"><span class="nav-number">29.3.</span> <span class="nav-text">开启分片数据库服务器mongod</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务配置"><span class="nav-number">29.4.</span> <span class="nav-text">服务配置</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#运维"><span class="nav-number">30.</span> <span class="nav-text">运维</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装部署为windows服务"><span class="nav-number">30.1.</span> <span class="nav-text">安装部署为windows服务</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#状态监控"><span class="nav-number">30.2.</span> <span class="nav-text">状态监控</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#静态统计"><span class="nav-number">30.2.1.</span> <span class="nav-text">静态统计</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#实时统计"><span class="nav-number">30.2.2.</span> <span class="nav-text">实时统计</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#安全认证"><span class="nav-number">30.3.</span> <span class="nav-text">安全认证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#备份和恢复"><span class="nav-number">30.4.</span> <span class="nav-text">备份和恢复</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考资料"><span class="nav-number">30.5.</span> <span class="nav-text">参考资料</span></a></li></ol></li></ol></div></div></section></div></aside></div></main><footer id="footer" class="footer"><div class="footer-inner"><div class="copyright"> &copy; 2015 - <span itemprop="copyrightYear">2017</span><span class="with-love"><i class="fa fa-heart"></i></span> <span class="author" itemprop="copyrightHolder">Raincal</span></div><div class="powered-by"> 由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动</div><div class="theme-info"> 主题 - <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a></div></div></footer><div class="back-to-top"><i class="fa fa-arrow-up"></i></div></div><script type="text/javascript">"[object Function]"!==Object.prototype.toString.call(window.Promise)&&(window.Promise=null)</script><script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script><script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script><script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script><script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script><script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script><script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script><script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script><script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script><script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script><script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script><script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script><script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script><script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script><script id="dsq-count-scr" src="https://raincal.disqus.com/count.js" async></script><script type="text/javascript">var disqus_config=function(){this.page.url="https://raincal.top/2015/07/10/mongoDB常用命令/",this.page.identifier="2015/07/10/mongoDB常用命令/",this.page.title="mongoDB常用命令"},d=document,s=d.createElement("script");s.src="https://raincal.disqus.com/embed.js",s.setAttribute("data-timestamp",""+ +new Date),(d.head||d.body).appendChild(s)</script><script src="https://cdn1.lncld.net/static/js/av-core-mini-0.6.1.js"></script><script>AV.initialize("xDCefA9EsTVuN1A9rHMfI8CG-gzGzoHsz","TgK8LqquaVhiY6lmrw6U8zcW")</script><script>function showTime(e){var t=new AV.Query(e),n=[],o=$(".leancloud_visitors");o.each(function(){n.push($(this).attr("id").trim())}),t.containedIn("url",n),t.find().done(function(e){if(0===e.length)return void o.find(".leancloud-visitors-count").text(0);for(var t=0;t<e.length;t++){var i=e[t],s=i.get("url"),r=i.get("time"),l=document.getElementById(s);$(l).find(".leancloud-visitors-count").text(r)}for(var t=0;t<n.length;t++){var s=n[t],l=document.getElementById(s),c=$(l).find(".leancloud-visitors-count");""==c.text()&&c.text(0)}}).fail(function(e,t){console.log("Error: "+t.code+" "+t.message)})}function addCount(e){var t=$(".leancloud_visitors"),n=t.attr("id").trim(),o=t.attr("data-flag-title").trim(),i=new AV.Query(e);i.equalTo("url",n),i.find({success:function(t){if(t.length>0){var i=t[0];i.fetchWhenSave(!0),i.increment("time"),i.save(null,{success:function(e){$(document.getElementById(n)).find(".leancloud-visitors-count").text(e.get("time"))},error:function(e,t){console.log("Failed to save Visitor num, with error message: "+t.message)}})}else{var s=new e,r=new AV.ACL;r.setPublicReadAccess(!0),r.setPublicWriteAccess(!0),s.setACL(r),s.set("title",o),s.set("url",n),s.set("time",1),s.save(null,{success:function(e){$(document.getElementById(n)).find(".leancloud-visitors-count").text(e.get("time"))},error:function(e,t){console.log("Failed to create")}})}},error:function(e){console.log("Error:"+e.code+" "+e.message)}})}$(function(){var e=AV.Object.extend("Counter");1==$(".leancloud_visitors").length?addCount(e):$(".post-title-link").length>1&&showTime(e)})</script><script>!function(){var t=document.createElement("script"),e=window.location.protocol.split(":")[0];t.src="https"===e?"https://zz.bdstatic.com/linksubmit/push.js":"http://push.zhanzhang.baidu.com/push.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(t,s)}()</script><script type="text/javascript" src="/js/src/love.js"></script></body></html>
